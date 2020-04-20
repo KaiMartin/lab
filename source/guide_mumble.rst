@@ -113,7 +113,7 @@ edit config file ``~/mumble/murmur.ini`` to specify the desired port, domain and
   database=<username>_mumble
   dbDriver=QMYSQL
   dbUsername=<username>
-  dbPassword=<mysql_password>
+  dbPassword="<mysql_password>"
   dbOpts="UNIX_SOCKET=/var/lib/mysql/mysql.sock"
   welcometext="<br />Welcome to this server running <b>Murmur</b>.<br />Enjoy your stay!<br />"
   port=<your_port>
@@ -121,6 +121,7 @@ edit config file ``~/mumble/murmur.ini`` to specify the desired port, domain and
   allowping=true
   bonjour=false
 
+Note the quotation marks around the password. This is necessary if the password contains special characters.
 For more configuration options look at the documentation_ site.
 
 Setup daemon
